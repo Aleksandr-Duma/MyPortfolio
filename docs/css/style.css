@@ -504,6 +504,11 @@ a {
   top: 25px;
   right: 20px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   display: none;
 }
 
@@ -581,7 +586,6 @@ a {
 
 .navigation__list-item {
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 20px;
   font-weight: 500;
   color: #fff;
@@ -606,7 +610,6 @@ a {
 
 .phone__link {
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -640,7 +643,6 @@ a {
 }
 
 .sub-title {
-  font-family: 'Roboto';
   font-size: 32px;
   font-weight: 700;
   color: #CDAA35;
@@ -651,7 +653,6 @@ a {
 .header__content-button {
   display: inline-block;
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -673,6 +674,11 @@ a {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .arrow-link__icon {
@@ -730,10 +736,9 @@ a {
 
 .portfolio-head__item {
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 700;
-  color: #111;
+  color: #111111;
   margin: 0 15px;
   cursor: pointer;
 }
@@ -764,8 +769,8 @@ a {
 .portfolio-item {
   width: 370px;
   height: 260px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(17, 17, 17, 0.4);
+  box-shadow: 0 0 10px rgba(17, 17, 17, 0.4);
   margin: 14px;
   position: relative;
 }
@@ -802,9 +807,7 @@ a {
 }
 
 .portfolio-item__text {
-  font-family: 'Roboto';
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.6;
   text-align: center;
   color: #fff;
@@ -812,7 +815,6 @@ a {
 }
 
 .portfolio-item__title {
-  font-family: 'Roboto';
   font-size: 22px;
   font-weight: 700;
   line-height: 1.6;
@@ -822,9 +824,7 @@ a {
 
 .portfolio-item__link {
   display: inline-block;
-  text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 14px;
   font-weight: 700;
   border: 2px solid #CDAA35;
@@ -866,14 +866,12 @@ a {
 }
 
 .resume__content-title {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 24px;
   text-align: left;
 }
 
 .resume__list-item {
-  font-family: 'Roboto';
   font-weight: 700;
   line-height: 1.4;
   font-size: 18px;
@@ -882,7 +880,6 @@ a {
 
 .resume__list-subtitle {
   list-style: none;
-  font-family: 'Roboto';
   font-weight: 700;
   line-height: 2;
   font-size: 16px;
@@ -896,9 +893,7 @@ a {
 
 .button-sv {
   display: inline-block;
-  text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 14px;
   font-weight: 700;
   border: 2px solid #CDAA35;
@@ -953,7 +948,6 @@ a {
 .contact__left-link {
   width: 80%;
   text-decoration: none;
-  font-family: 'Roboto';
   font-weight: 700;
   line-height: 1.4;
   font-size: 18px;
@@ -998,7 +992,6 @@ a {
 .contact-input {
   width: 100%;
   height: 45px;
-  font-family: 'Roboto';
   font-size: 16px;
   border: none;
   outline: none;
@@ -1008,32 +1001,26 @@ a {
 }
 
 .contact-input::-webkit-input-placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   color: #111111;
 }
 
 .contact-input::-moz-placeholder {
-  font-family: 'Roboto';
   font-size: 16px;
   color: #111111;
 }
 
 .contact-input:-ms-input-placeholder {
-  font-family: 'Roboto';
   font-size: 16px;
   color: #111111;
 }
 
 .contact-input::-ms-input-placeholder {
-  font-family: 'Roboto';
   font-size: 16px;
   color: #111111;
 }
 
 .contact-input::placeholder {
-  font-family: 'Roboto';
   font-size: 16px;
   color: #111111;
 }
@@ -1041,8 +1028,6 @@ a {
 .textarea {
   width: 100%;
   min-height: 90px;
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   border: none;
   outline: none;
@@ -1052,43 +1037,32 @@ a {
 }
 
 .textarea::-webkit-input-placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   color: #111111;
 }
 
 .textarea::-moz-placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   color: #111111;
 }
 
 .textarea:-ms-input-placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   color: #111111;
 }
 
 .textarea::-ms-input-placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   color: #111111;
 }
 
 .textarea::placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   color: #111111;
 }
 
 .contact-form__submit {
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 700;
   background-color: transparent;
@@ -1146,6 +1120,11 @@ label.error {
 .footer__social-link {
   text-decoration: none;
   margin: 0 18px 0 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .social-icon {
@@ -1169,7 +1148,6 @@ label.error {
 
 .footer__phone-link {
   text-transform: uppercase;
-  font-family: 'Roboto';
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -1179,6 +1157,11 @@ label.error {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .phone-icon-footer {
@@ -1186,8 +1169,6 @@ label.error {
 }
 
 .footer__copy {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 14px;
   color: #fff;
   text-align: center;
@@ -1469,7 +1450,7 @@ label.error {
   /*--------header--------*/
   .header {
     height: auto;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
   .navigation__list {
     position: absolute;
@@ -1514,7 +1495,7 @@ label.error {
     padding: 52vh 0 0 0;
   }
   .arrow-link {
-    bottom: 60px;
+    bottom: 40px;
   }
   /*---------resume---------*/
   .resume__content-left {
@@ -1590,9 +1571,6 @@ label.error {
   .header__content-button {
     font-size: 14px;
     padding: 15px 45px;
-  }
-  .arrow-link {
-    bottom: 80px;
   }
   /*--------portfolio--------*/
   .portfolio {

@@ -7,16 +7,7 @@
          url('notoserifjp-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto_serif_jp';
-    src: url('notoserifjp-regular-webfont.eot');
-    src: url('notoserifjp-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('notoserifjp-regular-webfont.woff2') format('woff2'),
-         url('notoserifjp-regular-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -27,6 +18,7 @@
          url('roboto-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -37,6 +29,7 @@
          url('roboto-medium-webfont.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -47,4 +40,5 @@
          url('roboto-regular-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
