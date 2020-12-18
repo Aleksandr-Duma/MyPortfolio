@@ -5,8 +5,13 @@ $(function(){
 	});
 
 	$('.button-close, .navigation__list-item').on('click', function(){
+		let win = $(window).width();
+
 		$('.navigation__list').removeClass('active');
-		$('.button-burger').fadeIn();
+		
+		if(win < 768){
+			$('.button-burger').fadeIn();
+		}	
 	});
 // ......................MixItUp2......................
 
