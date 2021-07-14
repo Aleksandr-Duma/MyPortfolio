@@ -1,13 +1,14 @@
 $(function(){
 	$('.button-burger').on('click', function(){
 		$('.navigation__list').addClass('active');
-		$('.button-burger').fadeOut();
+		$('.button-burger').addClass('hide');
 	});
 
 	$('.button-close, .navigation__list-item').on('click', function(){
 		let win = $(window).width();
 
 		$('.navigation__list').removeClass('active');
+		$('.button-burger').removeClass('hide');
 		
 		if(win < 768){
 			$('.button-burger').fadeIn();
@@ -15,7 +16,7 @@ $(function(){
 	});
 // ......................MixItUp2......................
 
-	$('#portfolio-body').mixItUp();
+	$('#portfolio__body').mixItUp();
 
 // ......................Scroll........................
 
@@ -62,4 +63,9 @@ $(function(){
 		});
 		return false;
 	});
+	
+//.......................Copiright......................	
+
+	let date = new Date();
+	let copy = document.querySelector('.copy-date').innerHTML = date.getFullYear();
 });

@@ -5,264 +5,263 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Портфолио</title>
-	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header" id = "header">
-		<div class="button-burger">
-			<div class="button-burger__item"></div>
-			<div class="button-burger__item"></div>
-			<div class="button-burger__item"></div>
-		</div>
 		<div class="container">
-			<nav class="header__navigation">
-				<div class="logo">
-					<a href="" class="logo__link">Duma<span>Web</span></a>
-				</div>
-				<div class="navigation__list">
-					<div class="button-close">&times;</div>
-					<a href="#portfolio" class="navigation__list-item">мои работы</a>
-					<a href="#resume" class="navigation__list-item">резюме</a>
-					<a href="#contact" class="navigation__list-item">контакты</a>
-				</div>
-				<div class="phone">
-					<a href="tel:+380675010527" class="phone__link">
-						<svg 
-							class = "phone-icon-header" version="1.1" x="0" y="0" viewBox="0 0 513.64 513.64" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z" data-original="#000000"/>
-						</svg>
-						+38 067-501-05-27
-					</a>
-				</div>
-			</nav>
-			<div class="header__content">
-				<h1 class="main-title">Александр Дума</h1>
-				<div class="sub-title">HTML верстка сайтов и веб-интерфейсов</div>
-				<a href="#resume" class="header__content-button">Резюме</a>
+			<div class="header__inner">
+				<a class="logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<nav class="header__navigation navigation">
+					<ul class="navigation__list">
+						<li class="navigation__list-item">
+							<button class="button-close">&times;</button>
+						</li>
+						<li class="navigation__list-item">
+							<a href="#portfolio" class="navigation__list-link">мои работы</a>
+						</li>
+						<li class="navigation__list-item">
+							<a href="#resume" class="navigation__list-link">резюме</a>
+						</li>
+						<li class="navigation__list-item">
+							<a href="#contact" class="navigation__list-link">контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="tel:+380675010527" class="phone__link">
+					<img src="img/phone.svg" alt="phone">
+					+38 067-501-05-27
+				</a>
+				<button class="button-burger">
+					<span class="button-burger__item"></span>
+					<span class="button-burger__item"></span>
+					<span class="button-burger__item"></span>
+				</button>
 			</div>
-			<a href="#portfolio" class="arrow-link">
-				<svg 
-					class = "arrow-link__icon" version="1.1" width="20" height="20" x="0" y="0" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 512 512" xml:space="preserve">
-					<path d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829    c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853    c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853    c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z" fill="#cdaa35" data-original="#000000"/>
-					<path d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05    c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893    c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046    c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" fill="#cdaa35" data-original="#000000"/>
-				</svg>
-			</a>
 		</div>
 	</header>
-	<section class = "portfolio" id = "portfolio">
-		<div class="container">
-			<div class="title-block">
-				<h3 class="title-block__title">Мои работы</h3>
-			</div>
-			<div class="portfolio-wrapper">
-				<div class="portfolio-head">
-					<span class="filter portfolio-head__item" data-filter = "all">Все работы</span>
-					<span class="filter portfolio-head__item" data-filter = ".order">На заказ</span>
-					<span class="filter portfolio-head__item" data-filter = ".tutorial">Учебные</span>
-				</div>
-				<div class="portfolio-body" id = "portfolio-body">
-					<div class="mix tutorial portfolio-item">
-						<img src="img/project-7.jpg" alt="project-7">
-						<div class="portfolio-item-overlay">
-							<div class="portfolio-item__text">Адаптивная верстка лендинга с добавлением анимации. Макет в Figma</div>
-							<div class="portfolio-item__title">Go Surf</div>
-							<a href="https://aleksandr-duma.github.io/GoSurf/." class="portfolio-item__link">посмотреть</a>
-						</div>
+	<main class="main">
+		<section class="top-section">
+			<div class="container">
+				<div class="top-section__inner">
+					<div class="top-section__content">
+						<h1 class="main-title">Александр Дума</h1>
+						<div class="sub-title">HTML верстка сайтов и веб-интерфейсов</div>
+						<a href="#resume" class="top-section__button">Резюме</a>
 					</div>
-					<div class="mix tutorial portfolio-item">
-						<img src="img/project-6.jpg" alt="project-6"> 
-						<div class="portfolio-item-overlay">
-							<div class="portfolio-item__text">Адаптивная верстка лендинга. Макет в PSD</div>
-							<div class="portfolio-item__title">Coffee Shop</div>
-							<a href="https://aleksandr-duma.github.io/CoffeeShop/." class="portfolio-item__link">посмотреть</a>
-						</div>
-					</div>
-					<div class="mix order portfolio-item">
-						<img src="img/project-5.jpg" alt="project-5">
-						<div class="portfolio-item-overlay">
-							<div class="portfolio-item__text">Адаптивная верстка многостраничного сайта. Макет в PSD</div>
-							<div class="portfolio-item__title">Partners</div>
-							<a href="https://aleksandr-duma.github.io/Partners/." class="portfolio-item__link">посмотреть</a>
-						</div>
-					</div>
-					<div class="mix order portfolio-item">
-						<img src="img/project-4.jpg" alt="project-4">
-						<div class="portfolio-item-overlay">
-							<div class="portfolio-item__text">Адаптивная верстка многостраничного сайта. Макет в PSD</div>
-							<div class="portfolio-item__title">ExchangeAuto</div>
-							<a href="https://aleksandr-duma.github.io/ExchangeAuto/." class="portfolio-item__link">посмотреть</a>
-						</div>
-					</div>
-					<div class="mix order portfolio-item">
-						<img src="img/project-3.jpg" alt="project-3">
-						<div class="portfolio-item-overlay">
-							<div class="portfolio-item__text">Адаптивная верстка лендинга для салона красоты. Макет в PSD</div>
-							<div class="portfolio-item__title">Bastet</div>
-							<a href="https://bastet-studio.top" class="portfolio-item__link">посмотреть</a>
-						</div>
-					</div>
-					<div class="mix tutorial portfolio-item">
-						<img src="img/project-2.jpg" alt="project-2">
-						<div class="portfolio-item-overlay">
-							<div class="portfolio-item__text">Адаптивная верстка лендинга - тестовое задание. Макет в PSD</div>
-							<div class="portfolio-item__title">Shaker Factory</div>
-							<a href="https://aleksandr-duma.github.io/ShakerFactory/." class="portfolio-item__link">посмотреть</a>
-						</div>
-					</div>
-					<div class="mix order portfolio-item">
-						<img src="img/project-1.jpg" alt="project-1">
-						<div class="portfolio-item-overlay">
-							<div class="portfolio-item__text">Адаптивная верстка лендинга. Макет в PSD</div>
-							<div class="portfolio-item__title">Prana Box</div>
-							<a href="http://www.energy.prana-box.com/" class="portfolio-item__link">посмотреть</a>
-						</div>
-					</div>
+					<a href="#portfolio" class="arrows-link">
+						<img class="arrows-link__img" src="img/arrows-down.svg" alt="arrows-down">
+					</a>		
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class = "resume" id = "resume">
-		<div class="container">
-			<div class="title-block">
-				<h3 class="title-block__title">Резюме</h3>
-			</div>
-			<div class="resume__content">
-				<div class="resume__content-left">
-					<div class="resume__content-title">Опыт работы:</div>
-					<ul class="resume__list">
-						<li class = "resume__list-item">Подработка на фрилансе. Опыта работы в компании не имею</li>
-					</ul>
-					<div class="resume__content-title">Образование:</div>
-					<ul class="resume__list">
-						<li class = "resume__list-item">Неоконченное высшее</li>
-					</ul>
-					<div class="resume__content-title">Дополнительное образование:</div>
-					<ul class="resume__list">
-						<li class="resume__list-subtitle">октябрь 2018 — декабрь 2018</li>
-						<li class = "resume__list-item">"WebCademy.ru" - Верстка сайтов HTML5 + CSS3</li>
-						<li class="resume__list-subtitle">декабрь 2017 — февраль 2018</li>
-						<li class = "resume__list-item">"JSExpert" Понятный JavaScript</li>
-						<li class="resume__list-subtitle">июнь 2017 — декабрь 2017</li>
-						<li class = "resume__list-item">"Cyber Bionic Systematics" - Frontend Developer</li>
-					</ul>
-					<div class="wrap__button-sv">
-						<a href="myResume.pdf" download="myResume.pdf"  class="button-sv">скачать резюме</a>
+		</section>
+		<section class = "portfolio" id = "portfolio">
+			<div class="container">
+				<div class="title-block">
+					<h3 class="title-block__title">Мои работы</h3>
+				</div>
+				<div class="portfolio__wrapper">
+					<div class="portfolio__head">
+						<span class="filter portfolio__head-item" data-filter = "all">Все работы</span>
+						<span class="filter portfolio__head-item" data-filter = ".order">На заказ</span>
+						<span class="filter portfolio__head-item" data-filter = ".tutorial">Учебные</span>
+					</div>
+					<div class="portfolio__body" id = "portfolio__body">
+						<div class="mix order portfolio-item">
+							<img src="img/project-9.jpg" alt="project-9">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка лендинга для марафона. Макет в Figma</div>
+								<div class="portfolio-item__title">Я-Машина</div>
+								<a href="https://aleksandr-duma.github.io/Marafon/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix order portfolio-item">
+							<img src="img/project-8.jpg" alt="project-8">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка простого лендинга. Макет в Figma</div>
+								<div class="portfolio-item__title">РеестРос</div>
+								<a href="https://aleksandr-duma.github.io/ReestRos/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix order portfolio-item">
+							<img src="img/project-7.jpg" alt="project-7">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка главной, и одной внутренней страницы интернет магазина сантехники. Макет в Figma</div>
+								<div class="portfolio-item__title">Екатерина</div> 
+								<a href="https://aleksandr-duma.github.io/Ekaterina/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix tutorial portfolio-item">
+							<img src="img/project-6.jpg" alt="project-6">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка лендинга с добавлением анимации. Макет в Figma</div>
+								<div class="portfolio-item__title">Go Surf</div>
+								<a href="https://aleksandr-duma.github.io/GoSurf/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix tutorial portfolio-item">
+							<img src="img/project-5.jpg" alt="project-5"> 
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка лендинга. Макет в PSD</div>
+								<div class="portfolio-item__title">Coffee Shop</div>
+								<a href="https://aleksandr-duma.github.io/CoffeeShop/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix order portfolio-item">
+							<img src="img/project-4.jpg" alt="project-4">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка многостраничного сайта. Макет в PSD</div>
+								<div class="portfolio-item__title">Partners</div>
+								<a href="https://aleksandr-duma.github.io/Partners/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix order portfolio-item">
+							<img src="img/project-3.jpg" alt="project-3">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка многостраничного сайта. Макет в PSD</div>
+								<div class="portfolio-item__title">ExchangeAuto</div>
+								<a href="https://aleksandr-duma.github.io/ExchangeAuto/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix tutorial portfolio-item">
+							<img src="img/project-2.jpg" alt="project-2">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка лендинга - тестовое задание. Макет в PSD</div>
+								<div class="portfolio-item__title">Shaker Factory</div>
+								<a href="https://aleksandr-duma.github.io/ShakerFactory/." class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
+						<div class="mix order portfolio-item">
+							<img src="img/project-1.jpg" alt="project-1">
+							<div class="portfolio-item__overlay">
+								<div class="portfolio-item__text">Адаптивная верстка лендинга. Макет в PSD</div>
+								<div class="portfolio-item__title">Prana Box</div>
+								<a href="http://www.energy.prana-box.com/" class="portfolio-item__link">посмотреть</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="resume__content-right">
-					<div class="resume__content-title">Технологии которые использую:</div>
-					<ul class="resume__list">
-						<li class = "resume__list-item">HTML5/CSS3</li>
-						<li class = "resume__list-item">SASS/SCSS/Less</li>
-						<li class = "resume__list-item">Gulp/npm</li>
-						<li class = "resume__list-item">Flexbox/CSS Grid</li>
-						<li class = "resume__list-item">Bootstrap 3/4 (использование сетки)</li>
-						<li class = "resume__list-item">Git/Git Hub</li>
-						<li class = "resume__list-item">Figma/Photoshop (нарезка макета)</li>
-						<li class = "resume__list-item">JS (базовые знания)</li>
-						<li class = "resume__list-item">Jquery (подключение, настройка плагинов)</li>
-						<li class = "resume__list-item">PixelPerfect</li>
-						<li class = "resume__list-item">БЭМ (наименование классов)</li>
-					</ul>
+			</div>
+		</section>
+		<section class = "resume" id = "resume">
+			<div class="container">
+				<div class="title-block">
+					<h3 class="title-block__title">Резюме</h3>
+				</div>
+				<div class="resume__content">
+					<div class="resume__content-left">
+						<div class="resume__content-title">Опыт работы:</div>
+						<ul class="resume__list">
+							<li class = "resume__list-item">Подработка на фрилансе. Опыта работы в компании не имею</li>
+						</ul>
+						<div class="resume__content-title">Образование:</div>
+						<ul class="resume__list">
+							<li class = "resume__list-item">Неоконченное высшее</li>
+						</ul>
+						<div class="resume__content-title">Дополнительное образование:</div>
+						<ul class="resume__list">
+							<li class="resume__list-subtitle">октябрь 2018 — декабрь 2018</li>
+							<li class = "resume__list-item">"WebCademy.ru" - Верстка сайтов HTML5 + CSS3</li>
+							<li class="resume__list-subtitle">декабрь 2017 — февраль 2018</li>
+							<li class = "resume__list-item">"JSExpert" Понятный JavaScript</li>
+							<li class="resume__list-subtitle">июнь 2017 — декабрь 2017</li>
+							<li class = "resume__list-item">"Cyber Bionic Systematics" - Frontend Developer</li>
+						</ul>
+						<div class="wrap__button-sv">
+							<a href="myResume.pdf" download="myResume.pdf"  class="button-sv">скачать резюме</a>
+						</div>
+					</div>
+					<div class="resume__content-right">
+						<div class="resume__content-title">Технологии которые использую:</div>
+						<ul class="resume__list">
+							<li class = "resume__list-item">HTML5/CSS3</li>
+							<li class = "resume__list-item">SASS/SCSS/Less</li>
+							<li class = "resume__list-item">Gulp/npm</li>
+							<li class = "resume__list-item">Flexbox/CSS Grid</li>
+							<li class = "resume__list-item">Bootstrap 3/4 (использование сетки)</li>
+							<li class = "resume__list-item">Git/Git Hub</li>
+							<li class = "resume__list-item">Figma/Photoshop (нарезка макета)</li>
+							<li class = "resume__list-item">JS (базовые знания)</li>
+							<li class = "resume__list-item">Jquery (подключение, настройка плагинов)</li>
+							<li class = "resume__list-item">PixelPerfect</li>
+							<li class = "resume__list-item">БЭМ (наименование классов)</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class = "contact" id = "contact">
-		<div class="container">
-			<div class="title-block">
-				<h3 class="title-block__title">Контакты</h3>
-			</div>
-			<div class="contact__wrap">
-				<div class="contact__left">
-					<a href="#!" class="contact__left-link">
-						<svg 
-							class = "contact-icon" version="1.1" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path d="M341.476,338.285c54.483-85.493,47.634-74.827,49.204-77.056C410.516,233.251,421,200.322,421,166    C421,74.98,347.139,0,256,0C165.158,0,91,74.832,91,166c0,34.3,10.704,68.091,31.19,96.446l48.332,75.84    C118.847,346.227,31,369.892,31,422c0,18.995,12.398,46.065,71.462,67.159C143.704,503.888,198.231,512,256,512    c108.025,0,225-30.472,225-90C481,369.883,393.256,346.243,341.476,338.285z M147.249,245.945    c-0.165-0.258-0.337-0.51-0.517-0.758C129.685,221.735,121,193.941,121,166c0-75.018,60.406-136,135-136    c74.439,0,135,61.009,135,136c0,27.986-8.521,54.837-24.646,77.671c-1.445,1.906,6.094-9.806-110.354,172.918L147.249,245.945z     M256,482c-117.994,0-195-34.683-195-60c0-17.016,39.568-44.995,127.248-55.901l55.102,86.463    c2.754,4.322,7.524,6.938,12.649,6.938s9.896-2.617,12.649-6.938l55.101-86.463C411.431,377.005,451,404.984,451,422    C451,447.102,374.687,482,256,482z" data-original="#000000"/>
-							<path d="M256,91c-41.355,0-75,33.645-75,75s33.645,75,75,75c41.355,0,75-33.645,75-75S297.355,91,256,91z M256,211    c-24.813,0-45-20.187-45-45s20.187-45,45-45s45,20.187,45,45S280.813,211,256,211z" data-original="#000000"/>
-						</svg>
-						Украина, Киев
-					</a>
-					<a href="mailto:Dumaweb9@gmail.com" class="contact__left-link">
-						<svg 
-							class = "contact-icon" version="1.1" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106    C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z     M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787    L338.213,256L482,112.212V399.787z" data-original="#000000"/>
-						</svg>
-						Dumaweb9@gmail.com
-					</a>
-					<a href="tel:+380675010527" class="contact__left-link">
-						<svg 
-							class = "contact-icon" version="1.1" x="0" y="0" viewBox="0 0 31.685 31.685" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path d="M22.507,0H9.175C7.9,0,6.87,1.034,6.87,2.309v27.07c0,1.271,1.03,2.306,2.305,2.306h13.332   c1.273,0,2.307-1.034,2.307-2.306V2.309C24.813,1.034,23.78,0,22.507,0z M23.085,25.672H8.599V3.895h14.486V25.672z M18.932,2.343   h-6.181V1.669h6.182L18.932,2.343L18.932,2.343z M21.577,2.035c0,0.326-0.266,0.59-0.591,0.59c-0.326,0-0.591-0.265-0.591-0.59   s0.265-0.59,0.591-0.59C21.312,1.444,21.577,1.709,21.577,2.035z M18.655,29.225h-5.629v-1.732h5.629V29.225z" data-original="#000000"/>
-						</svg>
-						+380675010527
-					</a>
-					<a href="tg://resolve?domain=@Dumaweb" class="contact__left-link">
-						<svg 
-							class = "contact-icon" version="1.1" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path xmlns="http://www.w3.org/2000/svg" d="m.415 11.196 5.869 2.925c.227.112.495.104.712-.023l5.224-3.037-3.162 2.802c-.161.143-.253.347-.253.562v6.825c0 .72.919 1.023 1.35.451l2.537-3.373 6.274 3.573c.44.253 1.004-.001 1.106-.504l3.913-19.5c.117-.586-.466-1.064-1.008-.846l-22.5 8.775c-.604.236-.643 1.081-.062 1.37zm21.83-8.249-3.439 17.137-5.945-3.386c-.324-.185-.741-.103-.971.201l-1.585 2.107v-4.244l8.551-7.576c.677-.599-.101-1.664-.874-1.21l-11.39 6.622-3.992-1.989z" data-original="#000000"/>
-						</svg>
-						@Dumaweb
-					</a>
+		</section>
+		<section class = "contact" id = "contact">
+			<div class="container">
+				<div class="title-block">
+					<h3 class="title-block__title">Контакты</h3>
 				</div>
-				<div class="contact__right">
-					<form class="contact-form">
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="Сайт Портфолио">
-						<input type="hidden" name="admin_email" value="Dumaweb9@gmail.com">
-						<input type="hidden" name="form_subject" value="Main form">
-						<!-- END Hidden Required Fields -->
-						<input type="text" name = "name" class="contact-input" placeholder="Имя *">
-						<input type="text" name = "email" class="contact-input" placeholder="E-mail *">
-						<input type="text" name = "phone" class="contact-input" placeholder="Телефон">
-						<input type="text" name = "telegram" class="contact-input" placeholder="Telegram">
-						<textarea class = "textarea" name = "message" placeholder="Ваше сообщение *"></textarea>
-						<button class = "contact-form__submit" type="submit">Отправить</button>
-					</form>
+				<div class="contact__wrap">
+					<div class="contact__left">
+						<a href="#!" class="contact__left-link">
+							<img class="contact-icon" src="img/location.svg" alt="location">
+							Украина, Киев
+						</a>
+						<a href="mailto:Dumaweb9@gmail.com" class="contact__left-link">
+							<img class="contact-icon" src="img/email.svg" alt="email">
+							Dumaweb9@gmail.com
+						</a>
+						<a href="tel:+380675010527" class="contact__left-link">
+							<img class="contact-icon" src="img/mobile.svg" alt="mobile">
+							+380675010527
+						</a>
+						<a href="tg://resolve?domain=@Dumaweb" class="contact__left-link">
+							<img class="contact-icon" src="img/telegram.svg" alt="telegram">
+							@Dumaweb
+						</a>
+					</div>
+					<div class="contact__right">
+						<form class="contact-form">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Сайт Портфолио">
+							<input type="hidden" name="admin_email" value="Dumaweb9@gmail.com">
+							<input type="hidden" name="form_subject" value="Main form">
+							<!-- END Hidden Required Fields -->
+							<input type="text" name = "name" class="contact-input" placeholder="Имя *">
+							<input type="text" name = "email" class="contact-input" placeholder="E-mail *">
+							<input type="text" name = "phone" class="contact-input" placeholder="Телефон">
+							<input type="text" name = "telegram" class="contact-input" placeholder="Telegram">
+							<textarea class = "textarea" name = "message" placeholder="Ваше сообщение *"></textarea>
+							<button class = "contact-form__submit" type="submit">Отправить</button>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</main>
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
-				<div class="logo footer-logo">
-					<a href="#" class="logo__link">Duma<span>Web</span></a>
-				</div>
-				<div class="footer__social-list">
-					<a href="https://github.com/Aleksandr-Duma" class="footer__social-link">
-						<svg 
-							class = "social-icon" version="1.1" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path xmlns="http://www.w3.org/2000/svg" d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"/>
-						</svg>
-					</a>
-					<a href="https://www.linkedin.com/in/aleksandr-duma-957397177" class="footer__social-link">
-						<svg 
-							class = "social-icon" version="1.1" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path xmlns="http://www.w3.org/2000/svg" d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z" data-original="#000000" style="" class=""/><path xmlns="http://www.w3.org/2000/svg" d="m.396 7.977h4.976v16.023h-4.976z" data-original="#000000"/><path xmlns="http://www.w3.org/2000/svg" d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z" data-original="#000000"/>
-						</svg>
-					</a>
-					<a href="https://www.facebook.com/oleksandr.duma.5/" class="footer__social-link">
-						<svg 
-							class = "social-icon" version="1.1" x="0" y="0" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" data-original="#000000"/>
-						</svg>
-					</a>
-				</div>
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<ul class="footer__social-list">
+					<li class="footer__social-item">
+						<a href="https://github.com/Aleksandr-Duma" class="footer__social-link git"></a>
+					</li>
+					<li class="footer__social-item">
+						<a href="https://www.linkedin.com/in/aleksandr-duma-957397177" class="footer__social-link lnk"></a>
+					</li>
+					<li class="footer__social-item">
+						<a href="https://www.facebook.com/oleksandr.duma.5/" class="footer__social-link fb"></a>
+					</li>
+				</ul>
 				<div class="footer__phone">
-					<a href="tel:+380675010527" class="footer__phone-link">
-						<svg 
-							class = "phone-icon-footer" version="1.1" width="20" height="20" x="0" y="0" viewBox="0 0 513.64 513.64" style="enable-background:new 0 0 512 512" xml:space="preserve">
-							<path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z" fill="#cdaa35" data-original="#000000"/>
-						</svg>
+					<a href="tel:+380675010527" class="phone__link footer">
+						<img src="img/phone.svg" alt="phone">
 						+38 067-501-05-27
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="footer__copy">
-			© 2020 Александр Дума
+			© <span class="copy-date">2020</span> Александр Дума
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
