@@ -1172,17 +1172,11 @@ label.error {
     margin: 0 0 30px 0;
   }
   .portfolio-item__overlay {
-    background-color: rgba(17, 17, 17, 0.6);
+    background-color: rgba(17, 17, 17, 0.5);
     opacity: 1;
   }
-  .portfolio-item__text {
-    color: #CDAA35;
-  }
-  .portfolio-item__title {
-    color: #CDAA35;
-  }
   .portfolio-item__link {
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.5);
   }
   .resume__content-left {
     min-height: 460px;
