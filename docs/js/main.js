@@ -1,19 +1,32 @@
+
+const buttonBurger = document.querySelector('.button-burger');
+const navigationList = document.querySelector('.navigation__list');
+const navigationItem = document.querySelectorAll('.navigation__list-item');
+const buttonClose = document.querySelector('.button-close');
+const body = document.querySelector('body');
+
+	buttonBurger.addEventListener('click', function() {
+		navigationList.classList.add('active');
+		buttonBurger.style.opacity = '0';
+		body.style.overflow = 'hidden';
+	});
+
+	buttonClose.addEventListener('click', function() {
+		navigationList.classList.remove('active');
+		buttonBurger.style.opacity = '';
+		body.style.overflow = '';
+	});
+
+	navigationItem.forEach(function(item) {
+		item.addEventListener('click', function() {
+			navigationList.classList.remove('active');
+			buttonBurger.style.opacity = '';
+			body.style.overflow = '';
+		});
+	});
+
 $(function(){
-	$('.button-burger').on('click', function(){
-		$('.navigation__list').addClass('active');
-		$('.button-burger').addClass('hide');
-	});
 
-	$('.button-close, .navigation__list-item').on('click', function(){
-		let win = $(window).width();
-
-		$('.navigation__list').removeClass('active');
-		$('.button-burger').removeClass('hide');
-		
-		if(win < 768){
-			$('.button-burger').fadeIn();
-		}	
-	});
 // ......................MixItUp2......................
 
 	$('#portfolio__body').mixItUp();
